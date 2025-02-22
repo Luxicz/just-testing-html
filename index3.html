@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #444444;
+            margin: 0;
+        }
+        .tema {
+            color: #87CEFA;
+            max-width: 50%;
+            margin: auto;
+            font-variant: small-caps;
+            font-size: larger;
+        }
+        .nadpis {
+            background-color: #38A9DF;
+            padding: 20px;
+            padding-left: 25%;
+            padding-right: 25%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .text {
+            color: white;
+        }
+        img {
+            float: right;
+            margin-right: 15%;
+        }
+        .obsah {
+            background-color: white;
+            margin: 0px 25%;
+            padding: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .sloupce {
+            display: flex;
+        }
+        .sloupec1 {
+            flex: 1;
+            margin-right: 5px;
+        }
+        .sloupec2 {
+            flex: 1;
+            margin-right: 5px;
+        }
+        .sloupec3 {
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="kontejner">
+        <div class="tema"><h1>Kaskádové<br>styly</h1></div>
+        <div class="nadpis">
+            <img src="./image.png" alt="obrazek">
+            <div class="text"><h1 style="font-variant: small-caps; margin-left: 20px;">Formátování</h1><h2 style="margin-left: 70px;">nejen</h2><h2 style="margin-left: 100px;">HTML dokumentů</h2></div>
+        </div>
+        <div class="obsah">
+            <h1 style="color: rgba(64, 99, 175, 0.925);">Úvod</h1>
+            <p>Cascading Style Sheets (CSS), česky kaskádové styly, je stylový jazyk sloužící pro popis vzhledu a formátování dokumentů napsaných nějakým značkovacím jazykem. Odděluje styl dokumentu od jeho obsahu. Nejčastěji se používá pro přidávání stylů (např. fonty, barvy, pozadí, ohraničení, formátování textu) do webových dokumentů. Kaskádové styly umožňují definovat způsob zobrazení každého elementu na stránce. CSS lze propojit s HTML dokumentem jako vnitřní, externí nebo vložené styly.</p>
+            <h1 style="color: rgba(64, 99, 175, 0.925);">Možnosti propojení s HTML dokumentem</h1>
+            <div class="sloupce">
+                <div class="sloupec1">
+                    <h2 style="color: #38A9DF;">Vnitřní styly</h2>
+                    <p>Metoda propojení prostřednictvím vnitřních stylů spočívá v uvedení CSS kódu do hlavičky HTML souboru, který chceme stylovat pomocí CSS. Každý HTML soubor tak bude obsahovat CSS kód ke stylování dané stránky. Tato metoda je vhodná jen pokud chceme stylovat jedním stylem pouze jednu stránku. Kdybychom totiž chtěli provést jednu a tu samou změnu na více stránkách, museli bychom změnit CSS kód v každém HTML souboru zvlášť.</p>
+                </div>
+                <div class="sloupec2">
+                    <h2 style="color: #38A9DF;">Externí styly</h2>
+                    <p>Princip externích stylů spočívá ve vytvoření samostatného souboru pouze pro CSS. Tento soubor má příponu css a Ize vytvořit v jakémkoliv textovém nebo HTML editoru. Propojení s HTML soubory se docílí vložením odkazu na CSS soubor do hlavičky každého z HTML souborů, který má být daným CSS souborem stylován. Všechny HTML soubory se tak odkazují na jeden soubor CSS. To znamená, že když chcete provést změnu v zobrazení všech stránek, stačí upravit jediný CSS soubor. Tím je vyřešen problém předchozí metody.</p>
+                </div>
+                <div class="sloupec3">
+                    <h2 style="color: #38A9DF;">Vložené styly</h2>
+                    <p>Poslední možností jsou vložené styly, které stylují elementy prostřednictvím atributu style umístěného přímo v HTML tagu elementu, který mají stylovat.</p>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: right; margin-right: 25%; color: white;">©2015 XYZ</p>
+    </div>
+</body>
+</html>
